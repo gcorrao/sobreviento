@@ -1,0 +1,11 @@
+#section-video {
+	position:relative;
+}
+.container.big-video {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
+
+.video-content iframe {
+border: 0 !important;
+}
