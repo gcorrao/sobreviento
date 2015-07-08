@@ -1,3 +1,37 @@
+/* Smooth Navigation */
+$(document).ready(
+		function() {
+			'use strict';
+			$('.nav').onePageNav({
+				currentClass : 'current',
+				scrollSpeed : 1000,
+				easing : 'easeInOutQuint'
+			});
+			$(window).bind(
+					'scroll',
+					function(e) {
+						var scrollPos = $(window).scrollTop();
+						scrollPos > 220 ? $('.sticky-section').addClass(
+								'nav-bg') : $('.sticky-section').removeClass(
+								'nav-bg');
+					});
+		});
+
+/* NiceScroll */
+$(document).ready(function() {
+	'use strict';
+	$("html").niceScroll({
+		cursorcolor : '#E74C3C',
+		cursoropacitymin : '1',
+		cursorborder : '0px',
+		cursorborderradius : '0px',
+		cursorwidth : '5px',
+		cursorminheight : 60,
+		horizrailenabled : false,
+		zindex : 1090
+	});
+});
+
 /* Backgroung slider */
 $(window).ready(function() {
 	'use strict';
@@ -9,10 +43,22 @@ $(window).ready(function() {
 			src : 'images/playing_flor.jpg',
 			fade : 1000
 		}, {
+			src : 'images/playing_seba.jpg',
+			fade : 1000
+		}, {
 			src : 'images/playing_pablo.jpg',
 			fade : 1000
 		} ]
 	})();
+});
+
+/* Watch */
+$(document).ready(function() {
+	'use strict';
+	$("#countdown").countdown({
+		date : "10 july 2017 12:00:00",
+		format : "on"
+	})
 });
 
 /* Scroll into viewPort Animation */
@@ -35,21 +81,6 @@ $(document).ready(
 						}
 					});
 		});
-
-/* NiceScroll */
-$(document).ready(function() {
-	'use strict';
-	$("html").niceScroll({
-		cursorcolor : '#E74C3C',
-		cursoropacitymin : '1',
-		cursorborder : '0px',
-		cursorborderradius : '0px',
-		cursorwidth : '5px',
-		cursorminheight : 60,
-		horizrailenabled : false,
-		zindex : 1090
-	});
-});
 
 /* Fitvids init */
 $(document).ready(function() {
