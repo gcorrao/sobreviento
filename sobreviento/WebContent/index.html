@@ -26,9 +26,9 @@
 <link rel="stylesheet" href="css/sections/download.css" />
 <link rel="stylesheet" href="css/sections/contact.css" />
 <link rel="stylesheet" href="css/sections/footer.css" />
-<!-- <link rel="stylesheet" href="css/nose/font-awesome.min.css" /> -->
-<!-- <link rel="stylesheet" href="css/nose/linea-icon.css" /> -->
-<!-- <link rel="stylesheet" href="css/nose/fancy-buttons.css" /> -->
+<!-- <link   rel="stylesheet" href="css/nose/font-awesome.min.css" /> -->
+<!-- <link   rel="stylesheet" href="css/nose/linea-icon.css" /> -->
+<!-- <link   rel="stylesheet" href="css/nose/fancy-buttons.css" /> -->
 
 <!--=== Google Fonts ===-->
 <!-- 	<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'> -->
@@ -39,8 +39,9 @@
 <!--=== Other CSS files ===-->
 <link rel="stylesheet" href="css/animate.css" />
 <link rel="stylesheet" href="css/jquery.vegas.css" />
-<!-- <link rel="stylesheet" href="css/nose/baraja.css" /> -->
-<!-- <link rel="stylesheet" href="css/nose/jquery.bxslider.css" /> -->
+<link rel="stylesheet" href="css/countdown.css" />
+<!-- <link   rel="stylesheet" href="css/nose/baraja.css" /> -->
+<!-- <link   rel="stylesheet" href="css/nose/jquery.bxslider.css" /> -->
 
 </head>
 <body>
@@ -87,23 +88,30 @@
 			<div class="container home">
 				<div class="row">
 					<h1 class="well-come">Que sale?</h1>
-					<div class="row">
-						<div class="col-md-4 col-md-offset-2 col-sm-5">
-							<h2>our next event in</h2>
-						</div>
-						<div class="col-sm-7 col-md-6">
-							<ul id="countdown">
-								<li><span class="days time-font">00</span>
-									<p>days</p></li>
-								<li><span class="hours time-font">00</span>
-									<p class="">hours</p></li>
-								<li><span class="minutes time-font">00</span>
-									<p class="">minutes</p></li>
-								<li><span class="seconds time-font">00</span>
-									<p class="">seconds</p></li>
-							</ul>
+					<div class="countdown">
+						<div class="countdown-container" id="countdown">
+							<div class="time weeks flip">
+								<span class="count curr top">00</span> <span class="count next top">25</span> <span class="count next bottom">25</span> <span class="count curr bottom">00</span> <span class="label">weeks</span>
+							</div>
+
+							<div class="time days flip">
+								<span class="count curr top">00</span> <span class="count next top">01</span> <span class="count next bottom">01</span> <span class="count curr bottom">00</span> <span class="label">days</span>
+							</div>
+
+							<div class="time hours flip">
+								<span class="count curr top">00</span> <span class="count next top">04</span> <span class="count next bottom">04</span> <span class="count curr bottom">00</span> <span class="label">hours</span>
+							</div>
+
+							<div class="time minutes flip">
+								<span class="count curr top">17</span> <span class="count next top">16</span> <span class="count next bottom">16</span> <span class="count curr bottom">17</span> <span class="label">min</span>
+							</div>
+
+							<div class="time seconds flip">
+								<span class="count curr top">58</span> <span class="count next top">57</span> <span class="count next bottom">57</span> <span class="count curr bottom">58</span> <span class="label">sec</span>
+							</div>
 						</div>
 					</div>
+
 					<div class="col-md-8 col-md-offset-2">
 						<p class="intro-message">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet qui dolorem</p>
 						<div class="home-buttons">
@@ -823,6 +831,7 @@
 	<!--=== Footer section Ends ===-->
 
 	<!--==== Js files ====-->
+
 	<!--==== Essential files ====-->
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -848,11 +857,12 @@
 	<script type="text/javascript" src="js/nose/jquery.appear.js"></script>
 	<script type="text/javascript" src="js/nose/jquery.fitvids.js"></script>
 
-	<!--==== Watch ====-->
-	<script type="text/javascript" src="js/coundown-timer.js"></script>
+	<!--==== Countdown ====-->
+	<script type="text/javascript" src="js/lodash.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
 
-	<!--==== Custom Script files ====-->
-	<script type="text/javascript" src="js/custom.js"></script>
+	<!--==== Main Script ====-->
+	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
