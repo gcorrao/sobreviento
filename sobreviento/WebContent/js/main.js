@@ -95,25 +95,20 @@ $(document).ready(function() {
 		containerWidth : 960,
 		containerHeight : 490,
 		headerWidth : 48,
-
 		theme : 'dark',
 		rounded : true,
 		enumerateSlides : true,
-		firstSlide : 2,
+		firstSlide : 1,
 		linkable : true,
 		easing : 'easeInOutQuart',
-
 		activateOn : 'click',
-		firstSlide : 1,
 		slideSpeed : 500,
 		onTriggerSlide : function() {
 		},
 		onSlideAnimComplete : function() {
 		},
-
 		autoPlay : false,
 		pauseOnHover : false,
-		cycleSpeed : 6000,
-		easing : 'swing'
+		cycleSpeed : 6000
 	});
 });
