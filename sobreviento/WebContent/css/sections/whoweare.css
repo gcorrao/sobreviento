@@ -1,17 +1,18 @@
-#section-testimonials {
+#section-whoweare {
 	color: #e5e5e5;
 }
 
-.testimonials-wrap {
+.whoweare-wrap {
+	background-color:#333;
 	position: relative;
 }
 
-.testimonials {
+.whoweare {
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
 
-.testimonials .comment {
+.whoweare .comment {
 	font-size: 18px;
 	margin-bottom: 48px;
 }
