@@ -88,27 +88,57 @@ $(document).ready(function() {
 	});
 });
 
-/* LiteAccordion */
+/* ZozoAccordion */
 $(document).ready(function() {
-	'use strict';
-	$('.liteAccordion').liteAccordion({
-		containerWidth : 960,
-		containerHeight : 490,
-		headerWidth : 48,
-		theme : 'dark',
-		rounded : true,
-		enumerateSlides : true,
-		firstSlide : 1,
-		linkable : true,
-		easing : 'easeInOutQuart',
-		activateOn : 'click',
-		slideSpeed : 500,
-		onTriggerSlide : function() {
+	$("#demo-accordion").zozoAccordion({
+		theme : "green",
+		orientation : "vertical",
+		active : 1,
+		width : 960,
+		height : 490,
+		sectionSpacing : 15,
+		headerSize : 70,
+		headerFontSize : 2.2,
+		slider : true,
+		showIcons : false,
+		responsive : true,
+		shadows : true,
+		bordered : true,
+		responsiveDelay : 0,
+		animation : {
+			easing : "easeOutQuart",
+			duration : 800
 		},
-		onSlideAnimComplete : function() {
-		},
-		autoPlay : false,
-		pauseOnHover : false,
-		cycleSpeed : 6000
+		vertical : {
+			sectionSpacing : 4
+		}
 	});
 });
+
+/* ----------------------------- 
+Contact form
+----------------------------- */			
+$(document).ready(function() {
+	'use strict';
+	$('form.contact-form').on('submit', function(e) {
+		$.post('contact/contact.php', $(this).serialize(), function(response) {
+			if ($('.confirmation p').html() != "") {
+				$('.confirmation p').replaceWith('<p><span class="fa fa-check"></span></p>');
+			}
+			$('.confirmation p').append(response).parent('.confirmation').show();
+			$('html, body').animate({
+				scrollTop: $('#section-contact').offset().top
+				},{duration:800,queue:true});
+			$('.form-item').val('');
+			setTimeout(function() {
+				$('.confirmation').hide();
+			}, 8000);
+		});
+		// disable default action
+		e.preventDefault();
+	});
+
+});
+
+//data-role="z-accordion"
+//	data-options='{"orientation": "horizontal", "theme": "red", "active": 0, "width": 1600,"height": 1600,"sectionSpacing": 8,"headerSize":70,"headerFontSize":2.2, "slider":true,"responsive":true,"showIcons":false,"shadows":true,"bordered":false,"responsiveDelay":0,"animation": {"duration":800, "easing": "easeOutQuart"}, "vertical": {"sectionSpacing":4}}'
