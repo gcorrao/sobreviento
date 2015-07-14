@@ -89,6 +89,7 @@ $(document).ready(function() {
 });
 
 /* ZozoAccordion */
+/*
 $(document).ready(function() {
 	'use strict';zozoAccordion
 	$("#zozoAccordion").zozoAccordion({
@@ -115,10 +116,34 @@ $(document).ready(function() {
 		}
 	});
 });
+*/
+$(document).ready(function() {
+	'use strict';
+	zozoAccordion
+	$("#zozoAccordion").zozoAccordion({
+		active : 0,
+		responsive : true,
+		orientation : "horizontal",
+		theme : "black",
+		shadows : true,
+		bordered : true,
+		slider : true,
+		rounded : false,
+		width : 1600,
+		height : 640,
+		dotNav : false,
+		containerHeight : 320,
+		headerSize : 68,
+		animation : {
+			duration : 400,
+			easing : "easeInOutQuart"
+		},
+		showIcons : true,
+		headerFontSize : 1.6
+	});
+});
 
-/* ----------------------------- 
-Contact form
------------------------------ */			
+/* Contact */			
 $(document).ready(function() {
 	'use strict';zozoAccordion
 	$('form.contact-form').on('submit', function(e) {
@@ -143,3 +168,5 @@ $(document).ready(function() {
 
 //data-role="z-accordion"
 //	data-options='{"orientation": "horizontal", "theme": "red", "active": 0, "width": 1600,"height": 1600,"sectionSpacing": 8,"headerSize":70,"headerFontSize":2.2, "slider":true,"responsive":true,"showIcons":false,"shadows":true,"bordered":false,"responsiveDelay":0,"animation": {"duration":800, "easing": "easeOutQuart"}, "vertical": {"sectionSpacing":4}}'
+
+//{active: 2,responsive: true,orientation: horizontal,  theme: silver, shadows: true,bordered: true, slider: true, rounded: false, width: 1600, height:420, dotNav:true, containerHeight: 320, headerSize:68, animation: {duration:400, easing: easeInOutQuart}, showIcons: true,headerFontSize: 1.6, autoplay: {interval:6000}}
