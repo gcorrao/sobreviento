@@ -90,13 +90,14 @@ $(document).ready(function() {
 
 /* ZozoAccordion */
 $(document).ready(function() {
-	$("#demo-accordion").zozoAccordion({
+	'use strict';zozoAccordion
+	$("#zozoAccordion").zozoAccordion({
 		theme : "green",
-		orientation : "vertical",
+		orientation : "horizontal",
 		active : 1,
 		width : 960,
 		height : 490,
-		sectionSpacing : 15,
+		sectionSpacing : 8,
 		headerSize : 70,
 		headerFontSize : 2.2,
 		slider : true,
@@ -119,7 +120,7 @@ $(document).ready(function() {
 Contact form
 ----------------------------- */			
 $(document).ready(function() {
-	'use strict';
+	'use strict';zozoAccordion
 	$('form.contact-form').on('submit', function(e) {
 		$.post('contact/contact.php', $(this).serialize(), function(response) {
 			if ($('.confirmation p').html() != "") {
