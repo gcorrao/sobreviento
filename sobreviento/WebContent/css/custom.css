@@ -1,4 +1,9 @@
 /* --------------- Reset Styles --------------- */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
