@@ -1,228 +1,414 @@
-/* ========== Responsive Styles ========== */
-
-
-
-/* --------- max width 991px -------- */
-@media only screen and (max-width: 991px) {
-	/* Main menu */
-	.navbar-nav > li > a {
-		font-size: 14px !important;
+@media (min-width: 768px) and (max-width: 979px) {
+	#menu {
+		display: none;	
 	}
 	
-	.step-no {
-		margin: 0 auto 60px;
+	#mobile-nav {
+    	display: block;
+		float: right;
 	}
 	
-	/* steps */
-	.step-even .step-img, .step-even .step-details {
-		float: none;
+	#menu-nav-mobile {
+		margin: 0;
 	}
 	
-	.step-img, .step-details{
-		margin-bottom: 40px;
+	header .sticky-nav #mobile-nav,
+	header .sticky-nav.stuck #mobile-nav {
+		margin-right: 20px;	
 	}
 	
-	.step-img {
-		text-align:center;
+	#social-area #social ul li {
+		margin-left: 15px;
 	}
 	
-	.single-pricing {
-		margin-bottom: 60px;
+	#social-area #social ul li a {
+		width: 50px;
+		height: 50px;
 	}
 	
-	.project-photo, .project-details {
-		margin-bottom: 60px;
+	#social-area #social ul li a span {
+		font-size: 24px;
+		line-height: 50px;
 	}
 	
-
+	#twitter-feed {
+		padding-top: 110px;
+		padding-bottom: 110px;	
+	}
+	
+	.info-block a.button {
+    	margin-top: 20px;
+    	position: inherit;
+	}
+	
+	.info-text {
+		padding-right: 0;	
+	}
 }
 
-
-
-
-
-/* --------- Styles for Screen width between 768px To 1023px -------- */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-	/* Features */
-	.baraja-container {
-		width: 180px;
-		height: 275px;
+@media (min-width: 481px) and (max-width: 767px) {
+	#back-to-top {
+		display: none !important;	
 	}
-
-	.single-feature .feature-icon i {
-		font-size: 70px;
+	
+	#home-slider {
+		margin-left: -20px;
+		margin-right: -20px;
 	}
-
-	.single-feature .feature-title {
-		font-size: 18px;
+	
+	header .sticky-nav {
+		position: relative;	
+	}
+	
+	header .sticky-nav,
+	#navigation-mobile,
+	.page,
+	.page-alternate,
+	#twitter-feed,
+	footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;	
+	}
+	
+	header .sticky-nav #logo {
+		margin-left: 0;
+	}
+	
+	header .sticky-nav.stuck #logo {
+		margin-left: 20px;	
+	}
+	
+	header .sticky-nav #menu {
+		margin-right: 0;
+	}
+	
+	header .sticky-nav.stuck #menu {
+		margin-right: 20px;	
+	}
+	
+	#menu {
+		display: none;	
+	}
+	
+	#mobile-nav {
+    	display: block;
+		float: right;
+	}
+	
+	#menu-nav-mobile {
+		margin-left: -20px;
+		margin-right: -20px;
+		margin-bottom: 0;
+	}
+	
+	header .sticky-nav.stuck #mobile-nav {
+		margin-right: 20px;	
+	}
+	
+	.work-nav {
+		margin-bottom: 30px;	
+	}
+	
+	.type-work {
+		background: url(../img/filter-icon.png) no-repeat;
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+		text-indent: -9999px;
+		margin-bottom: 0;
+		position: relative;
+		line-height: 10px;
+	}
+	
+	.work-nav #filters,
+	.work-nav #filters li {
+		display: inline-block;
+	}
+	
+	.work-nav #filters li {
+		margin:0 10px 0 0;	
+	}
+	
+	.work-nav #filters li a {
+		font-size: 13px;
+		text-transform: uppercase;	
+	}
+	
+	#about .profile {
+		margin-bottom: 30px;	
+	}
+	
+	#about .profile:last-child {
+		margin-bottom: 0;	
+	}
+	
+	#response {
+		margin-bottom: 30px;	
+	}
+	
+	.contact-details {
+		border-top: 1px dashed #3C3F45;
+		padding-top: 30px;
+		text-align: center;	
+	}
+	
+	#contact-form .submit {
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;	
+	}
+	
+	#social-area #social ul li:first-child,
+	#social-area #social ul li {
+		margin: 15px;
+	}
+	
+	#social-area #social ul li a {
+		width: 50px;
+		height: 50px;
+	}
+	
+	#social-area #social ul li a span {
+		font-size: 24px;
+		line-height: 50px;
+	}
+	
+	#twitter-feed {
+		padding-top: 90px;
+		padding-bottom: 100px;	
+	}
+	
+	#ticker .tweet_list li {
+		font-size: 16px;
 		line-height: 24px;
 	}
-
-	.single-feature .feature-text {
-		display:none;
+	
+	#ticker .tweet_list .tweet_time a {
+		font-size: 13px;
+		margin-left: 5px;	
 	}
-
 	
+	.info-block a.button {
+    	margin-top: 20px;
+    	position: inherit;
+		display: block;
+	}
 	
+	.info-text {
+		padding-right: 0;	
+	}
 }
 
-
-/* --------- Styles for Screen width Smaller than 767px -------- */
-@media only screen and (max-width: 767px) {
-	
-	/* Main menu */
-	.navbar-collapse {
-		margin-left: -16px;
-		margin-right: -16px;
-		background: #222;
-		overflow-y:scroll;
-		max-height: 200px;
-	}
-
-	.navbar-nav > li > a {
-		padding-left: 30px;
+@media (max-width: 480px) {
+	#back-to-top {
+		display: none !important;	
 	}
 	
-
-	/* features */
-	.container.features {
-		padding-bottom: 120px;
+	#home-slider {
+		margin-left: -20px;
+		margin-right: -20px;
 	}
 	
-	.baraja-container {
-		width: 180px;
-		height: 250px;
+	#home-slider ul#slide-list {
+		display: none;	
 	}
-
-
-	.single-feature .feature-title {
+	
+	header .sticky-nav {
+		position: relative;	
+	}
+	
+	header .sticky-nav,
+	#navigation-mobile,
+	.page,
+	.page-alternate,
+	#twitter-feed,
+	footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;	
+	}
+	
+	header .sticky-nav #logo {
+		margin-left: 0;
+	}
+	
+	header .sticky-nav.stuck #logo {
+		margin-left: 20px;	
+	}
+	
+	header .sticky-nav #menu {
+		margin-right: 0;
+	}
+	
+	header .sticky-nav.stuck #menu {
+		margin-right: 20px;	
+	}
+	
+	#menu {
+		display: none;	
+	}
+	
+	#mobile-nav {
+    	display: block;
+		float: right;
+	}
+	
+	#menu-nav-mobile {
+		margin-left: -20px;
+		margin-right: -20px;
+		margin-bottom: 0;
+	}
+	
+	#navigation-mobile li a {
 		font-size: 14px;
-		line-height: 20px;
-		padding: 0 5px;
-	}
-
-	.single-feature .feature-text {
-		display:none;
-	}
-
-	/* services */
-	.service {
-		margin-bottom: 20px;
-	}
-
-	.service .service-description {
-		margin: auto;
-		max-width: 480px;
-	}
-
-	/* Steps */
-	.step-even .step-img, .step-even .step-details {
-		float: none;
-	}
-
-	.step .step-img {
-		margin-top: 30px;
-	}
-		
-	.sub-steps .sub-text {
-		line-height: 28px;
-	}
-
-	/* Screenshots */
-	.figure {
-		width: 33.333%;
-	}
-
-	.figure-large {
-		width: 66.6667%;
-	}
-
-	/* Pricing table */
-	.single-pricing-wrap {
-		margin-bottom: 40px;
-	}
-}
-
-
-/* --------- Styles for Screen width Smaller than 480px -------- */
-@media only screen and (max-width: 480px) {
-	/* Headings for mobile View */
-	h1 {
-		font-size: 36px;
-		line-height: 48px;
-	}
-
-	h2 {
-		font-size: 26px;
-		line-height: 34px;
-	}
-
-	h3 {
-		font-size: 24px;
-		line-height: 32px;
-	}
-
-
-	#section-feature {
-		padding-top: 140px;
-		padding-bottom: 40px;
+		padding: 12px 0;
 	}
 	
-	.well-come {
-		margin-top: 150px;
-		font-size: 48px;
+	header .sticky-nav.stuck #mobile-nav {
+		margin-right: 20px;	
 	}
 	
-	.features-control {
-		float: left;
-		height: 160px;
-		width: 42px;
-		bottom: 340px;
+	.work-nav {
+		margin-bottom: 30px;	
 	}
-
-	.features-control .control-icon {
+	
+	.type-work {
+		background: url(../img/filter-icon.png) no-repeat;
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+		text-indent: -9999px;
+		margin-bottom: 0;
 		position: relative;
-		left: 2px !important;
-		float: left;
-		margin-bottom: 8px;
-	}
-
-	/* Steps */
-	.step-details .step-description {
-		text-align:justify;
-	}
-
-	.sub-steps {
-		margin-left: 5%;
-	}
-
-
-	/* Sreenshots */
-	.screenshots .col-xs-6 {
-		width: 100% !important;
+		line-height: 10px;
 	}
 	
-		#subscription-form  .input-email {
-		width: 320px;
+	.work-nav #filters li:first-child {
+		margin-left: 0;	
+	}
+	
+	.work-nav #filters,
+	.work-nav #filters li {
+		display: inline-block;
+	}
+	
+	.work-nav #filters li {
+		margin:0 10px 0 0;	
+	}
+	
+	.work-nav #filters li a {
+		font-size: 13px;
+		text-transform: uppercase;	
+	}
+	
+	#about .profile {
+		margin-bottom: 30px;	
+	}
+	
+	#about .profile:last-child {
+		margin-bottom: 0;	
+	}
+	
+	#response {
+		margin-bottom: 30px;	
+	}
+	
+	.contact-details {
+		border-top: 1px dashed #3C3F45;
+		padding-top: 30px;
+		text-align: center;	
+	}
+	
+	#contact-form .submit {
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;	
+	}
+	
+	#social-area #social ul li:first-child,
+	#social-area #social ul li {
+		margin: 15px;
+	}
+	
+	#social-area #social ul li a {
+		width: 50px;
+		height: 50px;
+	}
+	
+	#social-area #social ul li a span {
+		font-size: 24px;
+		line-height: 50px;
+	}
+	
+	#twitter-feed {
+		padding-top: 90px;
+		padding-bottom: 100px;	
+	}
+	
+	#ticker .tweet_list li {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	
+	#ticker .tweet_list .tweet_time a {
+		font-size: 12px;
+		margin-left: 3px;	
+	}
+	
+	.info-block a.button {
+    	margin-top: 20px;
+    	position: inherit;
+		display: block;
+	}
+	
+	.info-text {
+		padding-right: 0;	
+	}
+}
+
+@media (max-width: 320px) {
+	#navigation-mobile li a {
+		padding: 20px 0;
+	}
+	
+	.work-nav #filters li a {
+		font-size: 12px;
+	}
+	
+	#twitter-feed {
+		padding-top: 90px;
+		padding-bottom: 120px;	
 	}
 }
 
 
-/* --------- Styles for Screen width Smaller than 360px -------- */
-@media only screen and (max-width: 360px) {
-	.client-photos .photo-hold {
-		width: 80px;
-		height: 80px;
-		margin-bottom: 16px;
+/* Retina Display */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+ 	only screen and (-moz-min-device-pixel-ratio: 2),
+  	only screen and (-o-min-device-pixel-ratio: 2/1),
+  	only screen and (min-device-pixel-ratio: 2),
+  	only screen and (min-resolution: 2dppx) {
+		
+		header #logo a {
+			background-image: url(../img/logo_@2x.png);
+			background-size: 96px 30px;
+		}
+		
+		.menu-nav {
+			background-image: url(../img/menu-mobile_@2x.png);
+			background-size: 16px 32px;
+		}
+		
+		.type-work {
+			background-image: url(../img/filter-icon_@2x.png);
+			background-size: 16px 16px;
+		}
 	}
-
-	/* Subscription Form */
-	#subscription-form  .input-email {
-		width: 250px;
-	}
-}
-
-
-
 
 

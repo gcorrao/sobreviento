@@ -1,301 +1,463 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
+
 <title>Sobreviento</title>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Insert Your Site Description" />
 
-<!--=== Main CSS ===-->
-<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-<link type="text/css" rel="stylesheet" href="css/responsive.css" />
-<link type="text/css" rel="stylesheet" href="css/custom.css" />
+<!-- Main css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
 
-<!--=== Color Schemes ===-->
-<link type="text/css" rel="stylesheet" href="css/schemes/gray.css" id="scheme-source" />
+<!-- Supersized -->
+<link href="css/supersized.css" rel="stylesheet">
+<link href="css/supersized.shutter.css" rel="stylesheet">
 
-<!--=== Sections CSS ===-->
-<link type="text/css" rel="stylesheet" href="css/sections/home.css" />
-<link type="text/css" rel="stylesheet" href="css/sections/whoweare.css" />
-<link type="text/css" rel="stylesheet" href="css/sections/video.css" />
-<link type="text/css" rel="stylesheet" href="css/sections/music.css" />
-<link type="text/css" rel="stylesheet" href="css/sections/contact.css" />
-<link type="text/css" rel="stylesheet" href="css/sections/footer.css" />
+<!-- FancyBox -->
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
 
-<!--=== Other CSS files ===-->
-<link type="text/css" rel="stylesheet" href="css/animate.css" />
-<link type="text/css" rel="stylesheet" href="css/jquery.vegas.css" />
-<link type="text/css" rel="stylesheet" href="css/jquery.bxslider.css" />
-<link type="text/css" rel="stylesheet" href="css/jquery.zozo.accordion.min.css" />
+<!-- Font Icons -->
+<link href="css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
 
-	<!--=== Header section Starts ===-->
-	<div id="header" class="header-section">
-		<!-- sticky-bar Starts-->
-		<div class="sticky-bar-wrap">
-			<div class="sticky-section">
-				<div id="topbar-hold" class="nav-hold container">
-					<nav class="navbar" role="navigation">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-								<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-							</button>
-							<!--=== Site Name ===-->
-							<a class="site-name navbar-brand" href="#header">Sobreviento</a>
-						</div>
+	<!-- This section is for Splash Screen -->
+	<div class="ole">
+		<section id="jSplash">
+			<div id="circle"></div>
+		</section>
+	</div>
+	<!-- End of Splash Screen -->
 
-						<!-- Main Navigation menu Starts -->
-						<div class="collapse navbar-collapse navbar-responsive-collapse">
-							<ul class="nav navbar-nav navbar-right">
-								<li class="current"><a href="#header">Home</a></li>
-								<li><a href="#section-whoweare">Quienes Somos</a></li>
-								<li><a href="#section-video">Videos</a></li>
-								<li><a href="#section-music">Musica</a></li>
-								<li><a href="#section-contact">Contacto</a></li>
+	<div id="vegas"></div>
+
+	<!-- Homepage Slider -->
+	<div id="home-slider">
+		<div class="overlay"></div>
+
+		<div class="slider-text">
+			<div id="slidecaption"></div>
+		</div>
+
+		<div class="control-nav">
+			<!-- 			<a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a> <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a> -->
+			<!-- 			<ul id="slide-list"></ul> -->
+
+			<a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+		</div>
+	</div>
+	<!-- End Homepage Slider -->
+
+
+	<!-- Header -->
+	<header>
+		<div class="sticky-nav">
+			<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+
+			<div id="logo">
+				<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Brushed Template</a>
+			</div>
+
+			<nav id="menu">
+				<ul id="menu-nav">
+					<li class="current"><a href="#home-slider">Home</a></li>
+					<li><a href="#work">Obra</a></li>
+					<li><a href="#about">Quienes Somos</a></li>
+					<li><a href="#contact">Contacto</a></li>
+					<li><a href="shortcodes.html" class="external">Shortcodes</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- Our Work Section -->
+	<section id="work" class="page">
+		<div class="container">
+			<!-- Title Page -->
+			<div class="row">
+				<div class="span12">
+					<div class="title-page">
+						<h2 class="title">Obra</h2>
+						<!-- 						<h3 class="title-description"> -->
+						<!-- 							Check Out Our Projects on <a href="#">Dribbble</a>. -->
+						<!-- 						</h3> -->
+					</div>
+				</div>
+			</div>
+			<!-- End Title Page -->
+
+			<!-- Portfolio Projects -->
+			<div class="row">
+				<div class="span3">
+					<!-- Filter -->
+					<nav id="options" class="work-nav">
+						<ul id="filters" class="option-set" data-option-key="filter">
+							<li class="type-work">Type of Work</li>
+							<li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
+							<li><a href="#filter" data-option-value=".design">Design</a></li>
+							<li><a href="#filter" data-option-value=".photography">Photography</a></li>
+							<li><a href="#filter" data-option-value=".video">Video</a></li>
+						</ul>
+					</nav>
+					<!-- End Filter -->
+				</div>
+
+				<div class="span9">
+					<div class="row">
+						<section id="projects">
+							<ul id="thumbs">
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 design">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image --> <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="img/work/full/image-01-full.jpg"> <span
+										class="overlay-img"
+									></span> <span class="overlay-img-thumb font-icon-plus"></span>
+								</a> <!-- Thumb Image and Description --> <img src="img/work/thumbs/image-01.jpg"
+									alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+								>
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 design">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image --> <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="img/work/full/image-02-full.jpg"> <span
+										class="overlay-img"
+									></span> <span class="overlay-img-thumb font-icon-plus"></span>
+								</a> <!-- Thumb Image and Description --> <img src="img/work/thumbs/image-02.jpg"
+									alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+								>
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 photography">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image --> <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="img/work/full/image-03-full.jpg"> <span
+										class="overlay-img"
+									></span> <span class="overlay-img-thumb font-icon-plus"></span>
+								</a> <!-- Thumb Image and Description --> <img src="img/work/thumbs/image-03.jpg"
+									alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+								>
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 video">
+									<!-- Fancybox Media - Gallery Enabled - Title - Link to Video --> <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo"
+									href="http://vimeo.com/51460511"
+								> <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+								</a> <!-- Thumb Image and Description --> <img src="img/work/thumbs/image-08.jpg" alt="Video">
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 photography">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image --> <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="img/work/full/image-04-full.jpg"> <span
+										class="overlay-img"
+									></span> <span class="overlay-img-thumb font-icon-plus"></span>
+								</a> <!-- Thumb Image and Description --> <img src="img/work/thumbs/image-04.jpg"
+									alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+								>
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 photography">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image --> <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="img/work/full/image-05-full.jpg"> <span
+										class="overlay-img"
+									></span> <span class="overlay-img-thumb font-icon-plus"></span>
+								</a> <!-- Thumb Image and Description --> <img src="img/work/thumbs/image-05.jpg"
+									alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+								>
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 video">
+									<!-- Fancybox Media - Gallery Enabled - Title - Link to Video --> <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo"
+									href="http://vimeo.com/50834315"
+								> <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+								</a> <!-- Thumb Image and Description --> <img src="img/work/thumbs/image-09.jpg" alt="Video">
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 design">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image --> <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="img/work/full/image-06-full.jpg"> <span
+										class="overlay-img"
+									></span> <span class="overlay-img-thumb font-icon-plus"></span>
+								</a> <!-- Thumb Image and Description --> <img src="img/work/thumbs/image-06.jpg"
+									alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+								>
+								</li>
+								<!-- End Item Project -->
+
+								<!-- Item Project and Filter Name -->
+								<li class="item-thumbs span3 design">
+									<!-- Fancybox - Gallery Enabled - Title - Full Image --> <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="img/work/full/image-07-full.jpg"> <span
+										class="overlay-img"
+									></span> <span class="overlay-img-thumb font-icon-plus"></span>
+								</a> <!-- Thumb Image and Description --> <img src="img/work/thumbs/image-07.jpg"
+									alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+								>
+								</li>
+								<!-- End Item Project -->
 							</ul>
+						</section>
+
+					</div>
+				</div>
+			</div>
+			<!-- End Portfolio Projects -->
+		</div>
+	</section>
+	<!-- End Our Work Section -->
+
+	<!-- About Section -->
+	<section id="about" class="page-alternate">
+		<div class="container">
+			<!-- Title Page -->
+			<div class="row">
+				<div class="span12">
+					<div class="title-page">
+						<h2 class="title">Quienes Somos?</h2>
+						<!-- 						<h3 class="title-description">Learn About our Team &amp; Culture.</h3> -->
+					</div>
+				</div>
+			</div>
+			<!-- End Title Page -->
+
+			<!-- People -->
+			<div class="row">
+
+				<!-- Start Profile -->
+				<div class="span4 profile">
+					<div class="image-wrap">
+						<div class="hover-wrap">
+							<span class="overlay-img"></span> <span class="overlay-text-thumb">CTO/Founder</span>
 						</div>
-						<!-- Main Navigation menu ends-->
+						<img src="img/profile/profile-01.jpg" alt="John Doe">
+					</div>
+					<h3 class="profile-name">John Doe</h3>
+					<p class="profile-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id
+						hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+
+					<div class="social">
+						<ul class="social-icons">
+							<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Profile -->
+
+				<!-- Start Profile -->
+				<div class="span4 profile">
+					<div class="image-wrap">
+						<div class="hover-wrap">
+							<span class="overlay-img"></span> <span class="overlay-text-thumb">Creative Director</span>
+						</div>
+						<img src="img/profile/profile-02.jpg" alt="Jane Helf">
+					</div>
+					<h3 class="profile-name">Jane Helf</h3>
+					<p class="profile-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id
+						hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+
+					<div class="social">
+						<ul class="social-icons">
+							<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-email"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Profile -->
+
+				<!-- Start Profile -->
+				<div class="span4 profile">
+					<div class="image-wrap">
+						<div class="hover-wrap">
+							<span class="overlay-img"></span> <span class="overlay-text-thumb">Lead Designer</span>
+						</div>
+						<img src="img/profile/profile-03.jpg" alt="Joshua Insanus">
+					</div>
+					<h3 class="profile-name">Joshua Insanus</h3>
+					<p class="profile-description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id
+						hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+
+					<div class="social">
+						<ul class="social-icons">
+							<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
+							<li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Profile -->
+
+			</div>
+			<!-- End People -->
+		</div>
+	</section>
+	<!-- End About Section -->
+
+	<!-- Contact Section -->
+	<section id="contact" class="page">
+		<div class="container">
+			<!-- Title Page -->
+			<div class="row">
+				<div class="span12">
+					<div class="title-page">
+						<h2 class="title">Contacto</h2>
+						<!-- 						<h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3> -->
+					</div>
+				</div>
+			</div>
+			<!-- End Title Page -->
+
+			<!-- Contact Form -->
+			<div class="row">
+				<div class="span9">
+
+					<form id="contact-form" class="contact-form" action="#">
+						<p class="contact-name">
+							<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+						</p>
+						<p class="contact-email">
+							<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+						</p>
+						<p class="contact-message">
+							<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+						</p>
+						<p class="contact-submit">
+							<a id="contact-submit" class="submit" href="#">Send Your Email</a>
+						</p>
+
+						<div id="response"></div>
+					</form>
+
+				</div>
+
+				<div class="span3">
+					<div class="contact-details">
+						<h3>Contact Details</h3>
+						<ul>
+							<li><a href="#">hello@brushed.com</a></li>
+							<li>(916) 375-2525</li>
+							<li>Brushed Studio <br> 5240 Vanish Island. 105 <br> Unknow
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- End Contact Form -->
+		</div>
+	</section>
+	<!-- End Contact Section -->
+
+	<!-- Twitter Feed -->
+	<section id="twitter-feed" class="page-alternate">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<div class="follow">
+						<a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="font-icon-social-twitter"></i></a>
+					</div>
+
+					<div id="ticker" class="query"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Twitter Feed -->
+
+	<!-- Socialize -->
+	<section id="social-area" class="page">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<nav id="social">
+						<ul>
+							<li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
+							<li><a href="http://dribbble.com/Bluxart" title="Follow Me on Dribbble" target="_blank"><span class="font-icon-social-dribbble"></span></a></li>
+							<li><a href="http://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
+							<li><a href="http://www.behance.net/alessioatzeni" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
+							<li><a href="https://www.facebook.com/Bluxart" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+							<li><a href="https://plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
+							<li><a href="http://www.linkedin.com/in/alessioatzeni" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+							<li><a href="http://themeforest.net/user/Bluxart" title="Follow Me on ThemeForest" target="_blank"><span class="font-icon-social-envato"></span></a></li>
+							<li><a href="http://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li>
+						</ul>
 					</nav>
 				</div>
 			</div>
 		</div>
-		<!-- sticky-bar Ends-->
-		<!--=== Header section Ends ===-->
-
-		<!--=== Home Section Starts ===-->
-		<div id="section-home" class="home-section-wrap center">
-			<div class="section-overlay"></div>
-			<div class="container home">
-				<div class="row">
-					<h1 class="well-come">Cielo Y Caer</h1>
-
-					<div class="col-md-8 col-md-offset-2">
-						<p class="intro-message">Vamos a estar presentando nuestro nuevo disco en Buenos Ayres Club</p>
-
-						<div class="home-buttons">
-							<a href="#" class="fancy-button button-line button-white vertical"> Un boton <span class="icon"> <i class="fa fa-gear"></i>
-							</span>
-							</a> <a href="#" class="fancy-button button-line button-white zoom"> Otro boton <span class="icon"> <i class="fa fa-leaf"></i>
-							</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--=== Home Section Ends ===-->
-	</div>
-
-	<!--=== Testimonials section Starts ===-->
-	<section id="section-whoweare" class="whoweare-wrap">
-		<div class="container whoweare center animated" data-animation="rollIn" data-animation-delay="500">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="testimonial-slider">
-						<!-- Single Testimonial Starts -->
-						<div class="testimonial">
-							<p class="comment">Porque caemos con las cosas que nos atan cada vez más al suelo, y porque lo que escapa de nuestros ojos es siempre más bello que lo ya visto una y otra vez, decidimos
-								arrojarnos en este impulso de sobreviento, para que así, quizá sin darnos cuenta, la música se haga poema en el aire y en el aire vibre nuestro tiempo.</p>
-
-							<h5 class="happy-client">Seba Verdun</h5>
-							<span class="client-info">Bajo</span>
-						</div>
-						<!-- Single Testimonial Ends -->
-
-						<!-- Single Testimonial Starts -->
-						<div class="testimonial">
-							<p class="comment">Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza</p>
-
-							<h5 class="happy-client">Pablo Boye</h5>
-							<span class="client-info">Empanadas</span>
-						</div>
-						<!-- Single Testimonial Ends -->
-
-						<!-- Single Testimonial Starts -->
-						<div class="testimonial">
-							<p class="comment">Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza Zaraza</p>
-
-							<h5 class="happy-client">El puchi</h5>
-							<span class="client-info">Drums</span>
-						</div>
-						<!-- Single Testimonial Ends -->
-					</div>
-					<div id="bx-pager" class="client-photos">
-						<a data-slide-index="0" href="" class="photo-hold"> <span class="photo-bg"> <img src="images/playing_flor.jpg" alt="" /> <!-- Client photo 1 -->
-						</span>
-						</a> <a data-slide-index="1" href="" class="photo-hold"> <span class="photo-bg"> <img src="images/playing_pablo.jpg" alt="" /> <!-- Client photo 2 -->
-						</span>
-						</a> <a data-slide-index="2" href="" class="photo-hold"> <span class="photo-bg"> <img src="images/playing_seba.jpg" alt="" /> <!-- Client photo 3 -->
-						</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
-	<!--=== Testimonials section Ends ===-->
+	<!-- End Socialize -->
 
-	<!--=== Video section Starts ===-->
-	<section id="section-video" class="section-video-wrap">
-		<div class="section-overlay"></div>
-		<div class="container big-video center animated" data-animation="fadeInLeft" data-animation-delay="700">
-			<div class="row">
-				<div class="col-md-12 section-title">
-					<h3>Aca van los videos :)</h3>
-				</div>
-				<div class="col-md-12 video-content">
-					<ul class="bxslider">
-						<li><iframe width="500" height="281" src="https://www.youtube.com/embed/WnSKTTaL2pA" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
-						<li><iframe width="500" height="281" src="https://www.youtube.com/embed/cqL4qUaJec0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
-						<li><iframe width="500" height="281" src="https://www.youtube.com/embed/7osDo8lrNCY" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--=== Video section Ends ===-->
+	<!-- Footer -->
+	<footer>
+		<p class="credits">
+			&copy;2013 Brushed. <a href="http://themes.alessioatzeni.com/html/brushed/" title="Brushed | Responsive One Page Template">Brushed Template</a> by <a href="http://www.alessioatzeni.com/"
+				title="Alessio Atzeni | Web Designer &amp; Front-end Developer"
+			>Alessio Atzeni</a>
+		</p>
+	</footer>
+	<!-- End Footer -->
 
-	<!--=== Music section Starts ===-->
-	<section id="section-music" class="section-music-wrap">
-		<div class="section-overlay"></div>
-		<div class="container big-music center animated" data-animation="fadeInLeft" data-animation-delay="700">
-			<div class="row">
-				<div class="col-md-12 section-title">
-					<h3>Aca va la Musica ;)</h3>
-				</div>
-				<div class="col-md-12 music-content">
-
-					<div id="zozoAccordion">
-						<section>
-							<h3>Cielo y Caer</h3>
-							<div>
-								<iframe style="border: 0; width: 400px; height: 472px;" src="http://bandcamp.com/EmbeddedPlayer/album=3094384845/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/"
-									seamless
-								></iframe>
-							</div>
-						</section>
-						<section>
-							<h3>Odezia</h3>
-							<div>
-								<iframe style="border: 0; width: 400px; height: 472px;" src="http://bandcamp.com/EmbeddedPlayer/album=773304680/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless></iframe>
-							</div>
-						</section>
-						<section>
-							<h3>Simple 2013</h3>
-							<div>
-								<iframe style="border: 0; width: 400px; height: 472px;" src="http://bandcamp.com/EmbeddedPlayer/album=2512199094/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/"
-									seamless
-								></iframe>
-							</div>
-						</section>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--=== Music section Ends ===-->
-
-	<!--=== Contact section Starts ===-->
-	<section id="section-contact" class="contact-wrap">
-		<div class="section-overlay"></div>
-		<div class="container contact center animated" data-animation="flipInY" data-animation-delay="1000">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="col-md-10 col-md-offset-1 center section-title">
-						<h3>Leave a message</h3>
-					</div>
-
-					<div class="confirmation">
-						<p>
-							<span class="fa fa-check"></span>
-						</p>
-					</div>
-
-					<form class="contact-form support-form">
-
-						<div class="col-lg-12">
-							<input id="name" class="input-field form-item field-name" type="text" required="required" name="contact-name" placeholder="Name" /> <input id="email" class="input-field form-item field-email"
-								type="email" required="required" name="contact-email" placeholder="Email"
-							/> <input id="subject" class="input-field form-item field-subject" type="text" required="required" name="contact-subject" placeholder="Subject" />
-							<textarea id="message" class="textarea-field form-item field-message" rows="10" name="contact-message" placeholder="Message"></textarea>
-						</div>
-						<button type="submit" class="fancy-button button-line button-white large zoom subform">
-							Send message <span class="icon"> <i class="fa fa-paper-plane-o"></i>
-							</span>
-						</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--=== Contact section Ends ===-->
+	<!-- Back To Top -->
+	<a id="back-to-top" href="#"> <i class="font-icon-arrow-simple-up"></i>
+	</a>
+	<!-- End Back to Top -->
 
 
-	<!--=== Footer section Starts ===-->
-	<div id="section-footer" class="footer-wrap">
-		<div class="container footer center">
-			<div class="row">
-				<div class="col-lg-12">
-					<h4 class="footer-title">
-						<!-- Footer Title -->
-						<a class="site-name" href="#">Sobreviento</a>
-					</h4>
-
-					<!-- Social Links -->
-					<div class="social-icons">
-						<ul>
-							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-flickr"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-						</ul>
-					</div>
-
-					<p class="copyright">All rights reserved &copy; 2015</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--=== Footer section Ends ===-->
-
-	<!--==== Js files ====-->
-
-	<!--==== Essential files ====-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
-	<script type="text/javascript" src="js/modernizr.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-
-	<!--==== Slider plugins ====-->
-	<!-- Background -->
-	<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
-
-	<!-- Movies -->
-	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-
-	<!-- Music -->
-	<script type="text/javascript" src="js/jquery.zozo.accordion.min.js"></script>
-
-	<!--==== Scroll and navigation plugins ====-->
-	<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-	<script type="text/javascript" src="js/jquery.nav.js"></script>
-	<script type="text/javascript" src="js/jquery.appear.js"></script>
-	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-
-	<!--==== MailChimp Widget plugin ====-->
-	<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
-
-	<!--==== Detect Mobile Browser ====-->
-	<script type="text/javascript" src="js/jquery.detectmobilebrowser.js"></script>
-
-	<!--==== Main Script ====-->
-	<script type="text/javascript" src="js/main.js"></script>
+	<!-- Js -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- jQuery Core -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Modernizr -->
+	<script src="js/modernizr.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/supersized.3.2.7.min.js"></script>
+	<!-- Slider -->
+	<script src="js/waypoints.js"></script>
+	<!-- WayPoints -->
+	<script src="js/waypoints-sticky.js"></script>
+	<!-- Waypoints for Header -->
+	<script src="js/jquery.isotope.js"></script>
+	<!-- Isotope Filter -->
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<!-- Fancybox -->
+	<script src="js/jquery.fancybox-media.js"></script>
+	<!-- Fancybox for Media -->
+	<script src="js/jquery.tweet.js"></script>
+	<!-- Tweet -->
+	<script src="js/plugins.js"></script>
+	<!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+	<script src="js/main.js"></script>
+	<!-- Default JS -->
+	<!-- End Js -->
 
 </body>
 </html>
