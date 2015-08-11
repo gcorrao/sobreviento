@@ -444,6 +444,9 @@ $(document).ready(function(){
 	MAIN.accordion();
 	MAIN.toggle();
 	MAIN.toolTip();
+	
+	$('.parallax').parallax("50%", 0.1);
+	
 });
 
 $(window).resize(function(){
