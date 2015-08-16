@@ -5,10 +5,10 @@
 
 
 header('Cache-Control: no-cache, must-revalidate');
-header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+header('Expires: Mon, 26 Jul 2030 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'your@yourdomain.com'; // Your Email
+$admin_email = 'nahuelolgiati@hotmail.com'; // Your Email
 $message_min_length = 5; // Min Message Length
 
 
