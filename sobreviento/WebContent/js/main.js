@@ -41,6 +41,29 @@ jQuery(function($) {
         });
     }
 
+    /* ==================================================
+    Animate
+    ================================================== */
+    MAIN.animate = function() {
+        'use strict';
+        $('.animated').appear(
+            function() {
+                var element = $(this),
+                    animation = element
+                    .data('animation'),
+                    animationDelay = element
+                    .data('animation-delay');
+                if (animationDelay) {
+
+                    setTimeout(function() {
+                        element.addClass(animation + " visible");
+                    }, animationDelay);
+
+                } else {
+                    element.addClass(animation + " visible");
+                }
+            });
+    }
 
     /* ==================================================
        Slider Options
@@ -131,7 +154,8 @@ jQuery(function($) {
                     // options
                     animationEngine: 'best-available',
                     itemSelector: '.item-thumbs',
-                    layoutMode: 'fitRows'
+                    layoutMode: 'masonry',
+                    filter: '.disc'
                 });
             });
 
@@ -238,32 +262,32 @@ jQuery(function($) {
 
     MAIN.socialwall = function() {
 
-	$('.socialwall').socialTimeLine({
+        $('.socialwall').socialTimeLine({
 
-	        //enabled needs to have the same value which occurs in available
-	        width: 900,
-	        available: ['facebook','twitter','instagram'],
-	        enabled: 'facebook',
-	        facebook: {
-	            account: 'sobreviento',
-	            token: '123975213079|nqKWO89vVW4QH_bNmKH-Wiy3W0w', //app
-	            limit: 10,
-	            disable: ['thumbnail', 'date', 'name']
-	        },
-	        twitter: {
-	            account: 'Sobreviento_sv',
-	            consumer_key: 'aAgHjWIu5n6zESaUBxGfCIBi9',
-	            consumer_secret: 'xvg9peYRNcHi7kPUOsurNeb6lkBCqVYSLWw6il9EOJ93JsX7Lu',
-	            limit: 10,
-	            disable: ['thumbnail', 'date', 'name']
-	        },
-	        instagram: {
-	            account: 'sobreviento',
-	            client_id: '8ff3cd78c2e548a8bd85dbe479b8e721',
-	            disable: ['thumbnail', 'date', 'name'],
-	            limit: 10
-	        }
-	    });
+            //enabled needs to have the same value which occurs in available
+            width: 900,
+            available: ['facebook', 'twitter', 'instagram'],
+            enabled: 'facebook',
+            facebook: {
+                account: 'sobreviento',
+                token: '123975213079|nqKWO89vVW4QH_bNmKH-Wiy3W0w', //app
+                limit: 10,
+                disable: ['thumbnail', 'date', 'name']
+            },
+            twitter: {
+                account: 'Sobreviento_sv',
+                consumer_key: 'aAgHjWIu5n6zESaUBxGfCIBi9',
+                consumer_secret: 'xvg9peYRNcHi7kPUOsurNeb6lkBCqVYSLWw6il9EOJ93JsX7Lu',
+                limit: 10,
+                disable: ['thumbnail', 'date', 'name']
+            },
+            instagram: {
+                account: 'sobreviento',
+                client_id: '8ff3cd78c2e548a8bd85dbe479b8e721',
+                disable: ['thumbnail', 'date', 'name'],
+                limit: 10
+            }
+        });
 
     }
 
@@ -459,13 +483,8 @@ jQuery(function($) {
         $('body').jpreLoader({
             splashID: "#jSplash",
             showSplash: true,
-            showPercentage: true,
-            autoClose: true,
-            splashFunction: function() {
-                $('#circle').delay(250).animate({
-                    'opacity': 1
-                }, 500, 'linear');
-            }
+            showPercentage: false,
+            autoClose: true
         });
     }
 
@@ -482,6 +501,7 @@ jQuery(function($) {
         MAIN.jpreLoader();
         MAIN.nav();
         MAIN.mobileNav();
+        MAIN.animate();
         MAIN.listenerMenu();
         MAIN.menu();
         MAIN.goSection();
