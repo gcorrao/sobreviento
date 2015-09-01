@@ -265,6 +265,7 @@ jQuery(function($) {
         $('.socialwall').socialTimeLine({
 
             //enabled needs to have the same value which occurs in available
+            height: 500,
             width: 900,
             available: ['facebook', 'twitter', 'instagram'],
             enabled: 'facebook',
@@ -289,6 +290,9 @@ jQuery(function($) {
             }
         });
 
+        $(".socialMedia-content-inner").mCustomScrollbar({
+		theme:"dark-thin"
+	});
     }
 
 
