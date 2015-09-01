@@ -265,7 +265,7 @@ jQuery(function($) {
         $('.socialwall').socialTimeLine({
 
             //enabled needs to have the same value which occurs in available
-            height: 500,
+            height: 400,
             width: 900,
             available: ['facebook', 'twitter', 'instagram'],
             enabled: 'facebook',
