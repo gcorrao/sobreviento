@@ -202,8 +202,10 @@ jQuery(function($) {
     MAIN.fancyBox = function() {
         if ($('.fancybox').length > 0 || $('.fancybox-media').length > 0 || $('.fancybox-various').length > 0) {
 
-            $(".fancybox").fancybox({
+            $(".hover-wrap.fancybox.bancamp").fancybox({
                 padding: 0,
+                centerOnScroll: true,
+                maxWidth: "600px",
                 beforeShow: function() {
                     this.title = $(this.element).attr('title');
                     this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
@@ -215,7 +217,20 @@ jQuery(function($) {
                 }
             });
 
-            $('.fancybox-media').fancybox({
+            $('.hover-wrap.fancybox.video').fancybox({
+                padding: 0,
+                beforeShow: function() {
+                    this.title = $(this.element).attr('title');
+                    this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+                },
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    },
+                }
+            });
+            
+            $('.hover-wrap.fancybox.photo').fancybox({
                 openEffect: 'none',
                 closeEffect: 'none',
                 helpers: {

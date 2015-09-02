@@ -515,7 +515,7 @@ header #logo {
 
 header #logo a {
 	background: url(../img/logo.png) no-repeat;
-	width: 96px;
+	width: 100px;
 	height: 30px;
 	text-indent: -9999px;
 	display: block;
@@ -1423,4 +1423,12 @@ footer .credits {
 	padding: 100px 0 0 0;
 	position: relative;
 	width: 350px;	
+}
+
+.hero {
+    position: relative;
+    padding: 60px 0 60px 0;
+    background: rgb(40, 70, 102) url('../img/moleculas_video.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
 }
