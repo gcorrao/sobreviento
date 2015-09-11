@@ -24,6 +24,17 @@ jQuery(function($) {
     }
 
     MAIN.listenerMenu = function() {
+	$('#mobile-nav').on('click', function(e) {
+            $(this).toggleClass('open');
+
+            if ($('#mobile-nav').hasClass('open')) {
+                $('#navigation-mobile').slideDown(500, 'easeOutExpo');
+            } else {
+                $('#navigation-mobile').slideUp(500, 'easeOutExpo');
+            }
+            e.preventDefault();
+        });
+	
         $('#mobile-nav').on('click', function(e) {
             $(this).toggleClass('open');
 
@@ -312,10 +323,10 @@ jQuery(function($) {
     ================================================== */
 
     MAIN.menu = function() {
-        $('#menu-nav, #menu-nav-mobile').onePageNav({
+        $('#blur-menu, #menu-nav, #menu-nav-mobile').onePageNav({
             currentClass: 'current',
             changeHash: false,
-            scrollSpeed: 750,
+            scrollSpeed: 550,
             scrollOffset: 30,
             scrollThreshold: 0.5,
             easing: 'easeOutExpo',
