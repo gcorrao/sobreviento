@@ -112,10 +112,6 @@ jQuery(function($) {
             thumbnail_navigation: 0, // Thumbnail navigation
             slides: [ // Slideshow Images
                 {
-                    image: 'img/slider-images/playing_cho.jpg',
-                    thumb: '',
-                    url: ''
-                }, {
                     image: 'img/slider-images/playing_flor.jpg',
                     thumb: '',
                     url: ''
@@ -125,6 +121,10 @@ jQuery(function($) {
                     url: ''
                 }, {
                     image: 'img/slider-images/playing_seba.jpg',
+                    thumb: '',
+                    url: ''
+                }, {
+                    image: 'img/slider-images/playing_cho.jpg',
                     thumb: '',
                     url: ''
                 }

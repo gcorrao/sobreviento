@@ -44,6 +44,12 @@
 	.info-text {
 		padding-right: 0;	
 	}
+	
+	.bmenu li{
+	    font-size: 30px;
+	    display: block;
+	    margin-bottom: 20px;
+	}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -199,6 +205,12 @@
 	
 	.info-text {
 		padding-right: 0;	
+	}
+	
+	.bmenu li{
+	    font-size: 30px;
+	    display: block;
+	    margin-bottom: 20px;
 	}
 }
 
@@ -369,6 +381,12 @@
 	.info-text {
 		padding-right: 0;	
 	}
+	
+	.bmenu li{
+	    font-size: 30px;
+	    display: block;
+	    margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 320px) {
@@ -383,6 +401,12 @@
 	#twitter-feed {
 		padding-top: 90px;
 		padding-bottom: 120px;	
+	}
+	
+	.bmenu li{
+	    font-size: 20px;
+	    display: block;
+	    margin-bottom: 10px;
 	}
 }
 
