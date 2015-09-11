@@ -102,22 +102,18 @@ jQuery(function($) {
             slides: [ // Slideshow Images
                 {
                     image: 'img/slider-images/playing_cho.jpg',
-                    title: '<div class="slide-content">Sobreviento</div>',
                     thumb: '',
                     url: ''
                 }, {
                     image: 'img/slider-images/playing_flor.jpg',
-                    title: '<div class="slide-content">Sobreviento</div>',
                     thumb: '',
                     url: ''
                 }, {
                     image: 'img/slider-images/playing_pablo.jpg',
-                    title: '<div class="slide-content">Sobreviento</div>',
                     thumb: '',
                     url: ''
                 }, {
                     image: 'img/slider-images/playing_seba.jpg',
-                    title: '<div class="slide-content">Sobreviento</div>',
                     thumb: '',
                     url: ''
                 }

@@ -133,7 +133,7 @@
 }
 
 .fancybox-nav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	height: 100%;
 	cursor: pointer;
@@ -191,6 +191,7 @@
 	line-height: 1em;
 	position: absolute;
 	color: #FFFFFF;
+	margin-left: auto;
 }
 
 .fancybox-nav:hover span {

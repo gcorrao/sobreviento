@@ -633,6 +633,41 @@ nav#menu #menu-nav li a:hover {
 	padding: 20px 0;
 }
 
+/* ==================================================
+   Blur Menu
+================================================== */
+
+.bmenu{
+    padding: 0px;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+.bmenu li{
+    font-size: 80px;
+    display: block;
+    margin-bottom: 50px;
+}
+.bmenu li a{
+	color: transparent;
+	display: block;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 4px #fff;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.bmenu:hover li a{
+	text-shadow: 0px 0px 6px #fff;
+}
+.bmenu li a:hover{
+	color: #fff;
+	text-shadow: 0px 0px 1px #fff;
+	padding-left: 10px;
+}
+
 
 /* ==================================================
    Section Page
@@ -1392,43 +1427,9 @@ footer .credits {
           transition: none;
 }
 
-/* Parallax */
-.parallax {
-	background: url(../img/home.png) 50% 0 no-repeat fixed;
-	color: white;
-	width: 100%;
-	height: 200px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 0;
-}
-
-.parallax .bg{
-	background: url(../img/logo_@2x.png) 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 900px;
-	z-index: 200;
-}
-
-.story{
-	margin: 0 auto;
-	min-width: 980px;
-	overflow: auto;
-	width: 980px;
-}
-
-.story .float-left, .story .float-right{
-	padding: 100px 0 0 0;
-	position: relative;
-	width: 350px;	
-}
-
-.hero {
+.video-section {
     position: relative;
     padding: 60px 0 60px 0;
     background: rgb(40, 70, 102) url('../img/moleculas_video.jpg') no-repeat center center;
     background-size: cover;
-    color: #fff;
 }
