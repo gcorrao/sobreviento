@@ -24,7 +24,7 @@ jQuery(function($) {
     }
 
     MAIN.listenerMenu = function() {
-	$('#mobile-nav').on('click', function(e) {
+        $('#mobile-nav').on('click', function(e) {
             $(this).toggleClass('open');
 
             if ($('#mobile-nav').hasClass('open')) {
@@ -34,7 +34,7 @@ jQuery(function($) {
             }
             e.preventDefault();
         });
-	
+
         $('#mobile-nav').on('click', function(e) {
             $(this).toggleClass('open');
 
@@ -74,6 +74,17 @@ jQuery(function($) {
                     element.addClass(animation + " visible");
                 }
             });
+    }
+
+    /* ==================================================
+    Flowtype
+    ================================================== */
+    MAIN.flowtype = function() {
+        'use strict';
+        $('.profile-description').flowtype({
+            minFont: 10,
+            maxFont: 18
+        });
     }
 
     /* ==================================================
@@ -236,7 +247,7 @@ jQuery(function($) {
                     },
                 }
             });
-            
+
             $('.hover-wrap.fancybox.photo').fancybox({
                 openEffect: 'none',
                 closeEffect: 'none',
@@ -313,8 +324,8 @@ jQuery(function($) {
         });
 
         $(".socialMedia-content-inner").mCustomScrollbar({
-		theme:"dark-thin"
-	});
+            theme: "dark-thin"
+        });
     }
 
 
@@ -513,7 +524,7 @@ jQuery(function($) {
             autoClose: true
         });
     }
-    
+
 
     /* ==================================================
     	Init
@@ -528,6 +539,7 @@ jQuery(function($) {
         MAIN.nav();
         MAIN.mobileNav();
         MAIN.animate();
+        MAIN.flowtype();
         MAIN.listenerMenu();
         MAIN.menu();
         MAIN.goSection();
