@@ -246,47 +246,11 @@ h3.spec {
 }
 
 /* ==================================================
-   Margin Bottom Sets
+   Margin Sets
 ================================================== */
 
-.margin-0{
-	margin-bottom:0 !important;
-}
-
-.margin-10{
-	margin-bottom:10px !important;
-}
-
-.margin-15{
-	margin-bottom:15px !important;
-}
-
-.margin-20{
-	margin-bottom:20px !important;
-}
-
-.margin-30{
-	margin-bottom:30px !important;
-}
-
-.margin-40{
-	margin-bottom:40px !important;
-}
-
-.margin-50{
-	margin-bottom:50px !important;
-}
-
-.margin-60{
-	margin-bottom:60px !important;
-}
-
-.margin-70{
-	margin-bottom:70px !important;
-}
-
-.margin-80{
-	margin-bottom:80px !important;
+.margin-top {
+	margin-top:20px !important;
 }
 
 /* ==================================================
