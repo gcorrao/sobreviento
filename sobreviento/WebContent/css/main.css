@@ -843,8 +843,11 @@ nav#menu #menu-nav li a:hover {
     padding: 60px 0 60px 0;
     background: rgb(40, 70, 102) url('../img/moleculas_video.jpg') no-repeat center center;
     background-size: cover;
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.6);
+    z-index: 999;
 }
-
 
 /* ==================================================
    About Section
