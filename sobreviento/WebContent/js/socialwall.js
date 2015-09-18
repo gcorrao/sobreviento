@@ -1208,7 +1208,7 @@
                     retweets_markup = '';
                 } else {
                     retweets_markup = '<div class="social-comments">' +
-                        '<i class="fa fa-exchange"></i>' + retweets +
+                        '<i class="fa fa-retweet"></i>' + retweets +
                         '</div>';
                 }
 
