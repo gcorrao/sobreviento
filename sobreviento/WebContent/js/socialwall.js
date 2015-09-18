@@ -14,7 +14,7 @@
                 descriptionLength: 200, //set length of message (characters)
                 linkLength: 35, //set length of link (characters) - displayed when post is link type
                 media: true, //display media or not (photos and videos)
-                linkText: '<i class="icon-angle-double-right"></i>', //put here text or HTML for displaying link to read more content, i.g. ..read more etc.
+                linkText: '<i class="fa fa-angle-double-right"></i>', //put here text or HTML for displaying link to read more content, i.g. ..read more etc.
                 disable: null, // disable elements in this social, values: 'header, 'information', 'stats', 'thumbnail', 'shares', 'likes', 'comments', 'date', 'name'
                 afterLoad: null
             },
@@ -22,26 +22,26 @@
                 limit: 10,
                 media: true,
                 disable: null, // disable elements in this social, values: 'header, 'information', 'stats', 'thumbnail', 'retweets', 'tweets', 'date', 'name'
-                linkText: '<i class="icon-angle-double-right"></i>',
+                linkText: '<i class="fa fa-angle-double-right"></i>',
                 afterLoad: null
             },
             instagram: {
                 limit: 10,
                 media: true,
                 disable: null, // disable elements in this social, values: 'header, 'information', 'stats', 'thumbnail', 'likes', 'comments', 'date', 'name'
-                linkText: '<i class="icon-angle-double-right"></i>',
+                linkText: '<i class="fa fa-angle-double-right"></i>',
                 descriptionLength: 200,
                 afterLoad: null
             },
             pinterest: {
-                linkText: '<i class="icon-angle-double-right"></i>',
+                linkText: '<i class="fa fa-angle-double-right"></i>',
                 descriptionLength: 200,
                 disable: null, // disable elements in this social, values: 'header, 'information', 'stats', 'thumbnail', 'likes', 'repins', 'name'
                 media: true,
                 afterLoad: null
             },
             vkontakte: {
-                linkText: '<i class="icon-angle-double-right"></i>',
+                linkText: '<i class="fa fa-angle-double-right"></i>',
                 limit: 10,
                 descriptionLength: 200,
                 disable: null, // disable elements in this social, values: 'header, 'information', 'stats', 'thumbnail', 'likes', 'comments', 'shares', 'name', 'date
@@ -118,14 +118,12 @@
                         var iconholder, social_info = '';
                         iconholder = item;
 
-                        if (iconholder == 'instagram')
-                            iconholder = 'instagramm';
-                        else if (iconholder == 'pinterest')
+                        if (iconholder == 'pinterest')
                             iconholder = 'pinterest-circled';
 
                         //each social name has to occur in Feed.socials
                         if (Feed.socials.indexOf(item) != -1) {
-                            menuitem += '<li role="menuitem"><a href="#" class="' + item + '-link"><i class="icon-' + iconholder + '"></i></a></li>';
+                            menuitem += '<li role="menuitem"><a href="#" class="' + item + '-link"><i class="fa fa-' + iconholder + '"></i></a></li>';
                             section += '<section class="' + item + '"></section>';
                             infosocial += '<div class="social-info-' + item + '"></div>';
                             i++;
@@ -993,7 +991,7 @@
                             if (data[i].description != undefined) {
                                 description = '<div class="social-message">' + Utility.truncate(data[i].description, 'message', settings.facebook.descriptionLength);
                                 html += description;
-                                html += '<a href="' + facebook_url + id + '"><i class="icon-angle-double-right"></i></a>';
+                                html += '<a href="' + facebook_url + id + '"><i class="fa fa-angle-double-right"></i></a>';
                                 html += "</div>";
                             }
                             break;
@@ -1035,7 +1033,7 @@
                         likes_markup = '';
                     } else {
                         likes_markup = '<div class="social-likes">' +
-                            '<i class="icon-thumbs-up"></i>' + likes +
+                            '<i class="fa fa-thumbs-o-up"></i>' + likes +
                             '</div>';
                     }
 
@@ -1045,7 +1043,7 @@
                         comments_markup = '';
                     } else {
                         comments_markup = '<div class="social-comments">' +
-                            '<i class="icon-comment"></i>' + comments +
+                            '<i class="fa fa-comment-o"></i>' + comments +
                             '</div>';
                     }
 
@@ -1055,7 +1053,7 @@
                         shares_markup = '';
                     } else {
                         shares_markup = '<div class="social-shares">' +
-                            '<i class="icon-share"></i>' + shares +
+                            '<i class="fa fa-share-alt"></i>' + shares +
                             '</div>';
                     }
 
@@ -1200,7 +1198,7 @@
                     tweets_markup = '';
                 } else {
                     tweets_markup = '<div class="social-likes">' +
-                        '<i class="icon-star"></i>' + tweets +
+                        '<i class="fa fa-star"></i>' + tweets +
                         '</div>';
                 }
 
@@ -1210,7 +1208,7 @@
                     retweets_markup = '';
                 } else {
                     retweets_markup = '<div class="social-comments">' +
-                        '<i class="icon-retweet"></i>' + retweets +
+                        '<i class="fa fa-exchange"></i>' + retweets +
                         '</div>';
                 }
 
@@ -1346,7 +1344,7 @@
                     likes_markup = '';
                 } else {
                     likes_markup = '<div class="social-likes">' +
-                        '<i class="icon-heart"></i>' + likes +
+                        '<i class="fa fa-heart"></i>' + likes +
                         '</div>';
                 }
 
@@ -1356,7 +1354,7 @@
                     comments_markup = '';
                 } else {
                     comments_markup = '<div class="social-comments">' +
-                        '<i class="icon-comment"></i>' + comments +
+                        '<i class="fa fa-comment-o"></i>' + comments +
                         '</div>';
                 }
 
@@ -1463,7 +1461,7 @@
                     likes_markup = '';
                 } else {
                     likes_markup = '<div class="social-likes">' +
-                        '<i class="icon-heart"></i>' + pin.likes +
+                        '<i class="fa fa-heart"></i>' + pin.likes +
                         '</div>';
                 }
 
@@ -1584,7 +1582,7 @@
                     likes_markup = '';
                 } else {
                     likes_markup = '<div class="social-likes">' +
-                        '<i class="icon-heart"></i>' + post.likes +
+                        '<i class="fa fa-heart"></i>' + post.likes +
                         '</div>';
                 }
 
@@ -1594,7 +1592,7 @@
                     comments_markup = '';
                 } else {
                     comments_markup = '<div class="social-comments">' +
-                        '<i class="icon-comment"></i>' + post.comments +
+                        '<i class="fa fa-comment-o"></i>' + post.comments +
                         '</div>';
                 }
 
@@ -1604,7 +1602,7 @@
                     shares_markup = '';
                 } else {
                     shares_markup = '<div class="social-shares">' +
-                        '   <i class="icon-share"></i>' + post.shares +
+                        '   <i class="fa fa-share-alt"></i>' + post.shares +
                         '</div>';
                 }
 

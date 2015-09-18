@@ -160,7 +160,6 @@
 }
 .owl-widget {
     border: 2px solid;
-    border-radius: 4px;
     margin-bottom: 10px;
 }
 [class="row"]:not(:first-of-type) .owl-widget {

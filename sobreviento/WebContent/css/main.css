@@ -460,7 +460,7 @@ header .sticky-nav {
 	
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
 }
 
 header .sticky-nav.stuck {
@@ -473,7 +473,7 @@ header .sticky-nav.stuck {
 header #logo {
 	color: #FFFFFF;
 	float: left;
-	padding: 15px 0;
+	padding: 20px 0;
 	margin-left: 20px;
 }
 
@@ -1056,8 +1056,8 @@ nav#menu #menu-nav li a:hover {
 
 #social ul li a {
 	display: block;
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 
 	background: #26292E;
 	
@@ -1078,7 +1078,7 @@ nav#menu #menu-nav li a:hover {
 	margin: 0;
 	color: #55606a;
 	font-size: 32px;
-	line-height: 70px;
+	line-height: 60px;
 	
 	opacity: 0.3;
 	filter: alpha(opacity=30);
@@ -1153,7 +1153,7 @@ footer .credits {
 	right: 0;
 	width: 50px;
 	height: 50px;
-	z-index: 99;
+	z-index: 999;
 	
 	-webkit-transition: background 0.1s linear 0s;	
 	   -moz-transition: background 0.1s linear 0s;
