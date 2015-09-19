@@ -276,10 +276,10 @@ jQuery(function($) {
         });
 
         // Custom Navigation Events
-        $(".next").click(function() {
+        $(".owl.next").click(function() {
             owl.trigger('owl.next');
         })
-        $(".prev").click(function() {
+        $(".owl.prev").click(function() {
             owl.trigger('owl.prev');
         })
     }
