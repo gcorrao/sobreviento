@@ -164,8 +164,8 @@ jQuery(function($) {
     ================================================== */
 
     MAIN.filter = function() {
-        if ($('#projects').length > 0) {
-            var $container = $('#projects');
+        if ($('.filter-conteiner').length > 0) {
+            var $container = $('.filter-conteiner');
 
             $container.imagesLoaded(function() {
                 $container.isotope({
@@ -179,18 +179,18 @@ jQuery(function($) {
 
 
             // filter items when filter link is clicked
-            var $optionSets = $('#options .option-set'),
+            var $optionSets = $('.option-set'),
                 $optionLinks = $optionSets.find('a');
 
             $optionLinks.click(function() {
                 var $this = $(this);
-                // don't proceed if already selected
-                if ($this.hasClass('selected')) {
+                // don't proceed if already active
+                if ($this.hasClass('active')) {
                     return false;
                 }
                 var $optionSet = $this.parents('.option-set');
-                $optionSet.find('.selected').removeClass('selected');
-                $this.addClass('selected');
+                $optionSet.find('.active').removeClass('active');
+                $this.addClass('active');
 
                 // make option object dynamically, i.e. { filter: '.my-filter-class' }
                 var options = {},
