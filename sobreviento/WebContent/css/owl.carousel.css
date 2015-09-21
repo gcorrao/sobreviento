@@ -267,6 +267,7 @@
     position: relative;
     padding-left: 16px;
     padding-right: 15px;
+    cursor: pointer;
 }
 .owl-featured.hoverable .btn-rounded {
     transition: background-color 250ms ease 0s;
