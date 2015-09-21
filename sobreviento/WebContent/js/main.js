@@ -21,7 +21,7 @@ jQuery(function($) {
                 $('#mobile-nav').removeClass('open');
             }
         }
-    }
+    };
 
     MAIN.listenerMenu = function() {
         $('#mobile-nav').on('click', function(e) {
@@ -50,7 +50,7 @@ jQuery(function($) {
             $('#mobile-nav').removeClass('open');
             $('#navigation-mobile').slideUp(350, 'easeOutExpo');
         });
-    }
+    };
 
     /* ==================================================
     Animate
@@ -74,18 +74,7 @@ jQuery(function($) {
                     element.addClass(animation + " visible");
                 }
             });
-    }
-
-    /* ==================================================
-    Flowtype
-    ================================================== */
-    MAIN.flowtype = function() {
-        'use strict';
-        $('.profile-description').flowtype({
-            minFont: 10,
-            maxFont: 18
-        });
-    }
+    };
 
     /* ==================================================
        Slider Options
@@ -147,7 +136,7 @@ jQuery(function($) {
 
         });
 
-    }
+    };
 
 
     /* ==================================================
@@ -156,61 +145,113 @@ jQuery(function($) {
 
     MAIN.nav = function() {
         $('.sticky-nav').waypoint('sticky');
-    }
-
+    };
 
     /* ==================================================
-       Filter Works
+    About Filter
+ ================================================== */
+
+    MAIN.aboutFilter = function() {
+
+        var $container = $('.about-filter-container');
+
+        $container.imagesLoaded(function() {
+            $container.isotope({
+                // options
+                animationEngine: 'best-available',
+                itemSelector: '.item-thumbs',
+                layoutMode: 'masonry',
+                filter: '.band'
+            });
+        });
+
+
+        // filter items when filter link is clicked
+        var $optionSets = $('.about-option-set'),
+            $optionLinks = $optionSets.find('a');
+
+        $optionLinks.click(function() {
+            var $this = $(this);
+            // don't proceed if already active
+            if ($this.hasClass('active')) {
+                return false;
+            }
+            var $optionSet = $this.parents('.about-option-set');
+            $optionSet.find('.active').removeClass('active');
+            $this.addClass('active');
+
+            // make option object dynamically, i.e. { filter: '.my-filter-class' }
+            var options = {},
+                key = $optionSet.attr('data-option-key'),
+                value = $this.attr('data-option-value');
+            // parse 'false' as false boolean
+            value = value === 'false' ? false : value;
+            options[key] = value;
+            if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
+                // changes in layout modes need extra logic
+                changeLayoutMode($this, options);
+            } else {
+                // otherwise, apply new options
+                $container.isotope(options);
+            }
+
+            return false;
+        });
+
+    };
+
+    /* ==================================================
+       Works Filter
     ================================================== */
 
-    MAIN.filter = function() {
-        if ($('.filter-conteiner').length > 0) {
-            var $container = $('.filter-conteiner');
+    MAIN.worksFilter = function() {
 
-            $container.imagesLoaded(function() {
-                $container.isotope({
-                    // options
-                    animationEngine: 'best-available',
-                    itemSelector: '.item-thumbs',
-                    layoutMode: 'masonry',
-                    filter: '.disc'
-                });
+        var $container = $('.work-filter-container');
+
+        $container.imagesLoaded(function() {
+            $container.isotope({
+                // options
+                animationEngine: 'best-available',
+                itemSelector: '.item-thumbs',
+                layoutMode: 'masonry',
+                filter: '.disc'
             });
+        });
 
 
-            // filter items when filter link is clicked
-            var $optionSets = $('.option-set'),
-                $optionLinks = $optionSets.find('a');
+        // filter items when filter link is clicked
+        var $optionSets = $('.work-option-set'),
+            $optionLinks = $optionSets.find('a');
 
-            $optionLinks.click(function() {
-                var $this = $(this);
-                // don't proceed if already active
-                if ($this.hasClass('active')) {
-                    return false;
-                }
-                var $optionSet = $this.parents('.option-set');
-                $optionSet.find('.active').removeClass('active');
-                $this.addClass('active');
-
-                // make option object dynamically, i.e. { filter: '.my-filter-class' }
-                var options = {},
-                    key = $optionSet.attr('data-option-key'),
-                    value = $this.attr('data-option-value');
-                // parse 'false' as false boolean
-                value = value === 'false' ? false : value;
-                options[key] = value;
-                if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
-                    // changes in layout modes need extra logic
-                    changeLayoutMode($this, options)
-                } else {
-                    // otherwise, apply new options
-                    $container.isotope(options);
-                }
-
+        $optionLinks.click(function() {
+            var $this = $(this);
+            // don't proceed if already active
+            if ($this.hasClass('active')) {
                 return false;
-            });
-        }
-    }
+            }
+            var $optionSet = $this.parents('.work-option-set');
+            $optionSet.find('.active').removeClass('active');
+            $this.addClass('active');
+
+            // make option object dynamically, i.e. { filter: '.my-filter-class' }
+            var options = {},
+                key = $optionSet.attr('data-option-key'),
+                value = $this.attr('data-option-value');
+            // parse 'false' as false boolean
+            value = value === 'false' ? false : value;
+            options[key] = value;
+            if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
+                // changes in layout modes need extra logic
+                changeLayoutMode($this, options);
+            } else {
+                // otherwise, apply new options
+                $container.isotope(options);
+            }
+
+            return false;
+        });
+
+    };
 
 
     /* ==================================================
@@ -256,7 +297,7 @@ jQuery(function($) {
                 }
             });
         }
-    }
+    };
 
     /* ==================================================
     Owl-carousel
@@ -278,11 +319,11 @@ jQuery(function($) {
         // Custom Navigation Events
         $(".owl.next").click(function() {
             owl.trigger('owl.next');
-        })
+        });
         $(".owl.prev").click(function() {
             owl.trigger('owl.prev');
-        })
-    }
+        });
+    };
 
 
     /* ==================================================
@@ -312,7 +353,7 @@ jQuery(function($) {
             });
             return false;
         });
-    }
+    };
 
 
     /* ==================================================
@@ -352,7 +393,7 @@ jQuery(function($) {
         $(".socialMedia-content-inner").mCustomScrollbar({
             theme: "dark-thin"
         });
-    }
+    };
 
 
     /* ==================================================
@@ -369,22 +410,7 @@ jQuery(function($) {
             easing: 'easeOutExpo',
             filter: ':not(.external)'
         });
-    }
-
-    /* ==================================================
-       Next Section
-    ================================================== */
-
-    MAIN.goSection = function() {
-        $('#nextsection').on('click', function() {
-            $target = $($(this).attr('href')).offset().top - 30;
-
-            $('body, html').animate({
-                scrollTop: $target
-            }, 750, 'easeOutExpo');
-            return false;
-        });
-    }
+    };
 
     /* ==================================================
        GoUp
@@ -399,7 +425,7 @@ jQuery(function($) {
             }, 750, 'easeOutExpo');
             return false;
         });
-    }
+    };
 
 
     /* ==================================================
@@ -417,7 +443,7 @@ jQuery(function($) {
                 scrollTop: "0"
             }, 750, 'easeOutExpo');
             e.preventDefault();
-        })
+        });
 
         $(window).scroll(function() {
             didScroll = true;
@@ -434,7 +460,7 @@ jQuery(function($) {
                 }
             }
         }, 250);
-    }
+    };
 
     /* ==================================================
        Thumbs / Social Effects
@@ -457,7 +483,7 @@ jQuery(function($) {
             $(this).addClass('active');
         });
 
-    }
+    };
 
     /* ==================================================
        Accordion
@@ -478,7 +504,7 @@ jQuery(function($) {
             }
             event.preventDefault();
         });
-    }
+    };
 
     /* ==================================================
        Toggle
@@ -497,7 +523,7 @@ jQuery(function($) {
             }
             event.preventDefault();
         });
-    }
+    };
 
     /* ==================================================
        Tooltip
@@ -505,7 +531,7 @@ jQuery(function($) {
 
     MAIN.toolTip = function() {
         $('a[data-toggle=tooltip]').tooltip();
-    }
+    };
 
 
     /* ==================================================
@@ -527,7 +553,7 @@ jQuery(function($) {
                 }
             }
         }]);
-    }
+    };
 
     /* ==================================================
     JpreLoader
@@ -540,7 +566,7 @@ jQuery(function($) {
             showPercentage: false,
             autoClose: true
         });
-    }
+    };
 
 
     /* ==================================================
@@ -556,12 +582,11 @@ jQuery(function($) {
         MAIN.nav();
         MAIN.mobileNav();
         MAIN.animate();
-        MAIN.flowtype();
         MAIN.listenerMenu();
         MAIN.menu();
-        MAIN.goSection();
         MAIN.goUp();
-        MAIN.filter();
+        MAIN.aboutFilter();
+        MAIN.worksFilter();
         MAIN.fancyBox();
         MAIN.owlCarousel();
         MAIN.contactForm();

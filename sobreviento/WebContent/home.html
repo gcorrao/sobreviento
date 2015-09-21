@@ -55,16 +55,21 @@
 
 <!-- Analytics -->
 <script type="text/javascript">
-// TODO
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'Insert Your Code']);
-  _gaq.push(['_trackPageview']);
+	// TODO
+	var _gaq = _gaq || [];
+	_gaq.push([ '_setAccount', 'Insert Your Code' ]);
+	_gaq.push([ '_trackPageview' ]);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
 </script>
 <!-- End Analytics -->
 
@@ -132,114 +137,147 @@
 
 	<!-- About Section -->
 	<section id="about" class="page-alternate">
-		<div class="container">
+		<div class="container animated" data-animation="fadeInLeft" data-animation-delay="400">
 			<div class="row">
 
-				<!-- Navigation -->
-				<div class="row">
-					<div class="span12 animated" data-animation="fadeInLeft" data-animation-delay="400">
-						<ul class="option-set nav nav-pills pull-left section-navigation" data-option-key="filter">
-							<li class="active"><a href="#filter" data-option-value=".band">Banda</a></li>
-							<li class=""><a href="#filter" data-option-value=".members">Integrantes</a></li>
-						</ul>
+				<div class="span1"></div>
+				<div class="span10">
+
+					<!-- Navigation -->
+					<div class="row">
+						<div class="span10">
+							<ul class="about-option-set nav nav-pills pull-left section-navigation" data-option-key="filter">
+								<li class="active"><a href="#filter" data-option-value=".band">Banda</a></li>
+								<li><a href="#filter" data-option-value=".members">Integrantes</a></li>
+							</ul>
+						</div>
 					</div>
+
+					<div class="row">
+						<div class="span10">
+
+							<!-- About -->
+							<section class="about-filter-container">
+								<ul>
+									<li class="item-thumbs band">
+										<div class="row">
+											<div class="span10">
+												<h3 class="profile-name">Flor Walsh</h3>
+												<p class="profile-description">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper
+													metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+												</p>
+											</div>
+										</div>
+									</li>
+
+									<li class="item-thumbs members">
+										<div class="row-fluid">
+											<div class="span12">
+
+												<!-- Profile -->
+												<div class="span3 profile animated" data-animation="fadeInLeft" data-animation-delay="400">
+													<div class="image-wrap">
+														<div class="hover-wrap">
+															<span class="overlay-img"></span> <span class="overlay-text-thumb">Voz</span>
+														</div>
+														<img src="img/profile/profile-01.jpg" alt="John Doe">
+													</div>
+													<h3 class="profile-name">Flor Walsh</h3>
+													<p class="profile-description">
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper
+														metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+													</p>
+													<div class="social">
+														<ul class="social-icons">
+															<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+															<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+														</ul>
+													</div>
+												</div>
+												<!-- Profile -->
+												<div class="span3 profile animated" data-animation="fadeInLeft" data-animation-delay="600">
+													<div class="image-wrap">
+														<div class="hover-wrap">
+															<span class="overlay-img"></span> <span class="overlay-text-thumb">Guitarra</span>
+														</div>
+														<img src="img/profile/profile-01.jpg" alt="John Doe">
+													</div>
+													<h3 class="profile-name">Pablo Boyé</h3>
+													<p class="profile-description">
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper
+														metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+													</p>
+													<div class="social">
+														<ul class="social-icons">
+															<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+															<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+														</ul>
+													</div>
+												</div>
+												<!-- Profile -->
+												<div class="span3 profile animated" data-animation="fadeInLeft" data-animation-delay="800">
+													<div class="image-wrap">
+														<div class="hover-wrap">
+															<span class="overlay-img"></span> <span class="overlay-text-thumb">Bajo</span>
+														</div>
+														<img src="img/profile/profile-01.jpg" alt="John Doe">
+													</div>
+													<h3 class="profile-name">Sebastian Verdún</h3>
+													<p class="profile-description">
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper
+														metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+													</p>
+													<div class="social">
+														<ul class="social-icons">
+															<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+															<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+														</ul>
+													</div>
+												</div>
+												<!-- Profile -->
+												<div class="span3 profile animated" data-animation="fadeInLeft" data-animation-delay="1000">
+													<div class="image-wrap">
+														<div class="hover-wrap">
+															<span class="overlay-img"></span> <span class="overlay-text-thumb">Batería</span>
+														</div>
+														<img src="img/profile/profile-01.jpg" alt="John Doe">
+													</div>
+													<h3 class="profile-name">Jordan Zagatti</h3>
+													<p class="profile-description">
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper
+														metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+													</p>
+													<div class="social">
+														<ul class="social-icons">
+															<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+															<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+														</ul>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</li>
+
+								</ul>
+							</section>
+
+						</div>
+
+					</div>
+
 				</div>
-
-				<div class="row">
-
-					<!-- Profile -->
-					<div class="span3 profile animated" data-animation="fadeInLeft" data-animation-delay="400">
-						<div class="image-wrap">
-							<div class="hover-wrap">
-								<span class="overlay-img"></span> <span class="overlay-text-thumb">Voz</span>
-							</div>
-							<img src="img/profile/profile-01.jpg" alt="John Doe">
-						</div>
-						<h3 class="profile-name">Flor Walsh</h3>
-						<p class="profile-description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus,
-							id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						</p>
-						<div class="social">
-							<ul class="social-icons">
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Profile -->
-					<div class="span3 profile animated" data-animation="fadeInLeft" data-animation-delay="600">
-						<div class="image-wrap">
-							<div class="hover-wrap">
-								<span class="overlay-img"></span> <span class="overlay-text-thumb">Guitarra</span>
-							</div>
-							<img src="img/profile/profile-01.jpg" alt="John Doe">
-						</div>
-						<h3 class="profile-name">Pablo Boyé</h3>
-						<p class="profile-description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus,
-							id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						</p>
-						<div class="social">
-							<ul class="social-icons">
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Profile -->
-					<div class="span3 profile animated" data-animation="fadeInLeft" data-animation-delay="800">
-						<div class="image-wrap">
-							<div class="hover-wrap">
-								<span class="overlay-img"></span> <span class="overlay-text-thumb">Bajo</span>
-							</div>
-							<img src="img/profile/profile-01.jpg" alt="John Doe">
-						</div>
-						<h3 class="profile-name">Sebastian Verdún</h3>
-						<p class="profile-description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus,
-							id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						</p>
-						<div class="social">
-							<ul class="social-icons">
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Profile -->
-					<div class="span3 profile animated" data-animation="fadeInLeft" data-animation-delay="1000">
-						<div class="image-wrap">
-							<div class="hover-wrap">
-								<span class="overlay-img"></span> <span class="overlay-text-thumb">Batería</span>
-							</div>
-							<img src="img/profile/profile-01.jpg" alt="John Doe">
-						</div>
-						<h3 class="profile-name">Jordan Zagatti</h3>
-						<p class="profile-description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus,
-							id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						</p>
-						<div class="social">
-							<ul class="social-icons">
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-
-				</div>
+				<div class="span1"></div>
 
 			</div>
 		</div>
+
 	</section>
 	<!-- End About Section -->
 
 	<!-- Separator -->
-	<section class="video-section page">
+	<section class="page-spacer video-section">
 		<div class="container">
 			<div class="row">
 				<div class="span12 text-center">
@@ -252,156 +290,35 @@
 	</section>
 	<!-- End Separator -->
 
-	<!-- Events -->
-	<section class="page-alternate">
-		<div class="container">
+	<!-- Our Work Section -->
+	<section id="work" class="page">
+		<div class="container animated" data-animation="fadeInLeft" data-animation-delay="400">
 			<div class="row">
+
 				<div class="span1"></div>
 				<div class="span10">
 
-					<!-- Header -->
-					<div class="owl-header">
-
-						<div class="carousel-controls-left">
-							<a class="owl prev carousel-button"> <i class="fa fa-angle-left fa-2x"></i></a>
-						</div>
-
-						<div class="carousel-controls-center">
-							<h3 class="owl-title">Próximas Fechas</h3>
-						</div>
-
-						<div class="carousel-controls-right">
-							<a class="owl prev carousel-button"> <i class="fa fa-angle-right fa-2x"></i></a>
-						</div>
-
-					</div>
-
-					<div class="owl-carousel">
-
-						<div class="item">
-							<div class="owl-featured hoverable">
-								<div class="owl-img-cont owl-br">
-									<div class="owl-featured-img artist-4"></div>
-									<h4>Radiohead</h4>
-								</div>
-								<div class="owl-txt-cont">
-									<h4>JUE 12 | 21 00 HS</h4>
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="owl-featured hoverable">
-								<div class="owl-img-cont owl-br">
-									<div class="owl-featured-img artist-5"></div>
-									<h4>Beck</h4>
-								</div>
-								<div class="owl-txt-cont">
-									<h4>VIE 13 | 21 00 HS</h4>
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="owl-featured hoverable">
-								<div class="owl-img-cont owl-br">
-									<div class="owl-featured-img artist-6"></div>
-									<h4>Feist</h4>
-								</div>
-								<div class="owl-txt-cont">
-									<h4>SAB 14 | 21 00 HS</h4>
-									<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="owl-featured hoverable">
-								<div class="owl-img-cont owl-br">
-									<div class="owl-featured-img artist-4"></div>
-									<h4>Radiohead</h4>
-								</div>
-								<div class="owl-txt-cont">
-									<h4>JUE 12 | 21 00 HS</h4>
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="owl-featured hoverable">
-								<div class="owl-img-cont owl-br">
-									<div class="owl-featured-img artist-5"></div>
-									<h4>Beck</h4>
-								</div>
-								<div class="owl-txt-cont">
-									<h4>VIE 13 | 21 00 HS</h4>
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="owl-featured hoverable">
-								<div class="owl-img-cont owl-br">
-									<div class="owl-featured-img artist-6"></div>
-									<h4>Feist</h4>
-								</div>
-								<div class="owl-txt-cont">
-									<h4>SAB 14 | 21 00 HS</h4>
-									<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="span1"></div>
-
-			</div>
-		</div>
-	</section>
-
-	<!-- Our Work Section -->
-	<section id="work" class="page">
-		<div class="container">
-			<div class="row animated"  data-animation="fadeInLeft" data-animation-delay="400">
-
-				<div class="span12 profile">
-
 					<!-- Filter -->
 					<div class="row">
-						<div class="span1"></div>
 						<div class="span10">
 							<nav>
-								<ul class="option-set nav nav-pills pull-left section-navigation" data-option-key="filter">
+								<ul class="work-option-set nav nav-pills pull-left section-navigation" data-option-key="filter">
 									<li class="active"><a href="#filter" data-option-value=".disc">Discos</a></li>
 									<li><a href="#filter" data-option-value=".photography">Fotos</a></li>
 									<li><a href="#filter" data-option-value=".video">Videos</a></li>
 								</ul>
 							</nav>
 						</div>
-						<div class="span1"></div>
 					</div>
 
 					<!-- Portfolio Projects -->
 					<div class="row">
-						<div class="span1"></div>
 						<div class="span10">
 							<div class="row">
 
 								<!-- Projects -->
-								<section class="filter-conteiner">
-									<ul id="thumbs">
+								<section class="work-filter-container">
+									<ul>
 
 										<!-- Disc -->
 										<li class="item-thumbs span3 disc">
@@ -567,10 +484,10 @@
 
 							</div>
 						</div>
-						<div class="span1"></div>
 					</div>
 
 				</div>
+				<div class="span1"></div>
 
 			</div>
 		</div>
@@ -588,6 +505,109 @@
 		</div>
 	</section>
 	<!-- End SocialWall -->
+
+	<!-- Events -->
+	<section class="page-spacer events-section">
+		<div class="container">
+			<div class="row">
+
+				<div class="span1"></div>
+				<div class="span10">
+
+					<div class="owl-carousel">
+
+						<div class="item">
+							<div class="owl-featured hoverable">
+								<div class="owl-img-cont owl-br">
+									<div class="owl-featured-img artist-4"></div>
+									<h4>Radiohead</h4>
+								</div>
+								<div class="owl-txt-cont">
+									<h4>JUE 12 | 21 00 HS</h4>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="owl-featured hoverable">
+								<div class="owl-img-cont owl-br">
+									<div class="owl-featured-img artist-5"></div>
+									<h4>Beck</h4>
+								</div>
+								<div class="owl-txt-cont">
+									<h4>VIE 13 | 21 00 HS</h4>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="owl-featured hoverable">
+								<div class="owl-img-cont owl-br">
+									<div class="owl-featured-img artist-6"></div>
+									<h4>Feist</h4>
+								</div>
+								<div class="owl-txt-cont">
+									<h4>SAB 14 | 21 00 HS</h4>
+									<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="owl-featured hoverable">
+								<div class="owl-img-cont owl-br">
+									<div class="owl-featured-img artist-4"></div>
+									<h4>Radiohead</h4>
+								</div>
+								<div class="owl-txt-cont">
+									<h4>JUE 12 | 21 00 HS</h4>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="owl-featured hoverable">
+								<div class="owl-img-cont owl-br">
+									<div class="owl-featured-img artist-5"></div>
+									<h4>Beck</h4>
+								</div>
+								<div class="owl-txt-cont">
+									<h4>VIE 13 | 21 00 HS</h4>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="owl-featured hoverable">
+								<div class="owl-img-cont owl-br">
+									<div class="owl-featured-img artist-6"></div>
+									<h4>Feist</h4>
+								</div>
+								<div class="owl-txt-cont">
+									<h4>SAB 14 | 21 00 HS</h4>
+									<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+									<a href="#0" class="btn-rounded small facebook"><span class="pe-so-facebook"></span></a> <a href="#0" class="btn-rounded small twitter"><span class="pe-so-twitter"></span></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="span1"></div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Events -->
 
 	<!-- Contact Section -->
 	<section id="contact" class="page">
@@ -657,9 +677,6 @@
 
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-
-	<!-- Flowtype -->
-	<script src="js/flowtype.js" type="text/javascript"></script>
 
 	<!-- Slider -->
 	<script src="js/supersized.3.2.7.min.js" type="text/javascript"></script>
